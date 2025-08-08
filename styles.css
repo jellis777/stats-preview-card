@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.stat-card {
+    background-color: hsl(244, 37%, 16%);
+    border-radius: 3px;
+    height: auto;
+    min-height: 300px;
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-wrapper {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+}
+
+.image-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto; 
+    filter: brightness(60%);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%, 0.5);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+
+}
+
+.heading, .numbers {
+    color: hsl(0, 0%, 100%);
+}
+
+.heading {
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-indent: 4%;
+}
+
+.highlight {
+    color: hsl(277, 64%, 61%);
+}
+.description {
+    color: hsla(0, 0%, 100%, 0.75);
+    text-indent: 8%;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-size: 15px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers {
+    color: hsl(0, 0%, 100%);
+    
+}
+
+.stat {
+    margin-bottom: 1rem;
+}
+
+.numbers {
+    font-size: 1.2rem;
+}
+
+.subject {
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.75)
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
